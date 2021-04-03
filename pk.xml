@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="gitlab" fetch="https://gitlab.com/asus-sdm660-4.19" revision="lineage-18.1-4.19" />
+  <remote name="arrow" fetch="https://github.com/ArrowOS" revision="arrow-11.0" />
+
+  <!-- Sync trees -->
+  <project path="device/asus/X00T" name="device_asus_x00t-4.19" clone-depth="1" groups="gitlab" remote="gitlab" revision="lineage-18.1-4.19" />
+  <project path="vendor/asus" name="proprietary_vendor_asus-4.19" clone-depth="1" groups="gitlab" remote="gitlab" revision="lineage-18.1-4.19" />
+  <project path="kernel/asus/sdm660" name="kernel_asus_sdm660-4.19" clone-depth="1" groups="gitlab" remote="gitlab" revision="Stardust-4.19" />
+
+  <!-- Sync HALs -->
+  <remove-project name="hardware/qcom-caf/msm8998/audio" />
+  <remove-project name="hardware/qcom-caf/msm8998/media" />
+  <remove-project name="hardware/qcom-caf/msm8998/display" />
+
+  <project path="hardware/qcom-caf/msm8998/audio" name="android_hardware_qcom_audio" clone-depth="1" groups="qcom,qcom_audio" remote="gitlab" revision="lineage-18.1-4.19" />
+    <project path="hardware/qcom-caf/msm8998/media" name="android_hardware_qcom_media" clone-depth="1" groups="qcom,qcom_media" remote="gitlab" revision="lineage-18.1-4.19" />
+    <project path="hardware/qcom-caf/msm8998/display" name="android_hardware_qcom_display" clone-depth="1" groups="qcom,qcom_display" remote="gitlab" revision="lineage-18.1-4.19" />
+
+  <!-- Sync repo's with extra commits -->
+  <remove-project name="vendor/codeaurora/telephony" />
+  <project path="vendor/codeaurora/telephony" name="android_vendor_codeaurora_telephony" clone-depth="1" groups="arrow" remote="arrow" revision="arrow-11.0" />
+
+</manifest>
