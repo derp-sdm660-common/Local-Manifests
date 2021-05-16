@@ -5,17 +5,14 @@
                 fetch="https://github.com" />
 
         <!-- Remove some projects -->
-	<remove-project name="AOSPA/android_kernel_build"/>
-	<remove-project name="AOSPA/android_vendor_pa"/>
 	<remove-project name="AOSPA/android_device_qcom_common"/>
 
         <!-- Sync trees -->
         <project path="device/asus/X00TD" name="derp-sdm660-common/aospa_device_asus_X00TD" remote="github" revision="dt" />
         <project path="vendor/asus" name="derp-sdm660-common/aospa_device_asus_X00TD" remote="github" revision="vendor" />
-        <project path="kernel/asus/sdm660" name="derp-sdm660-common/aospa_kernel" remote="github" revision="test" />
-        <project path="device/qcom/kernelscripts" name="Vishalcj17/android_kernel_build" remote="github" revision="ruby" />
-        <project path="vendor/pa" name="derp-sdm660-common/android_vendor_pa" remote="github" revision="ruby" />
+        <project path="kernel/asus/sdm636" name="derp-sdm660-common/aospa_kernel" remote="github" revision="test" />
         <project path="device/qcom/common" name="derp-sdm660-common/android_device_qcom_common" remote="github" revision="ruby" />
+          <linkfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
 
         <!-- Hals stuff -->
         <project path="hardware/qcom/media" name="AOSPA/android_hardware_qcom_media" remote="github" revision="ruby-660-4.19" />
