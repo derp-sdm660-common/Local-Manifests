@@ -30,6 +30,7 @@
         <remove-project name="platform/prebuilts/android-emulator" />
         <remove-project name="platform/prebuilts/qemu-kernel" />
         <remove-project name="vendor_qcom_opensource_power" />
+        <remove-project name="device/generic/opengl-transport" />
 
         <!-- Sync trees -->
         <project path="device/asus/X00T" name="derp-sdm660-common/device_asus_x00t-4.19" remote="github" revision="derp" />
