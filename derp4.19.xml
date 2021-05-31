@@ -42,8 +42,8 @@
         <remove-project name="android_hardware_qcom_audio" />
         <remove-project name="android_hardware_qcom_display" />
         <remove-project name="android_hardware_qcom_media" />
-        <project path="hardware/qcom-caf/msm8998/media" name="derp-sdm660-common/hardware_qcom_media-4.19" remote="github" revision="arrow-11.0" />
-        <project path="hardware/qcom-caf/msm8998/audio" name="derp-sdm660-common/hardware_qcom_audio-4.19" remote="github" revision="arrow-11.0" />
-        <project path="hardware/qcom-caf/msm8998/display" name="derp-sdm660-common/hardware_qcom_display-4.19" remote="github" revision="arrow-11.0" />
+        <project path="hardware/qcom-caf/msm8998/media" name="derp-sdm660-common/hardware_qcom_media-4.19" remote="github" revision="sdm660-4.19-R" />
+        <project path="hardware/qcom-caf/msm8998/audio" name="derp-sdm660-common/hardware_qcom_audio-4.19" remote="github" revision="sdm660-4.19-R" />
+        <project path="hardware/qcom-caf/msm8998/display" name="derp-sdm660-common/hardware_qcom_display-4.19" remote="github" revision="sdm660-4.19-R" />
   
 </manifest>
