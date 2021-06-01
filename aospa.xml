@@ -7,12 +7,12 @@
         <!-- Sync trees -->
         <project path="device/asus/X00TD" name="derp-sdm660-common/aospa_device_asus_X00TD" remote="github" revision="dt" />
         <project path="vendor/asus" name="derp-sdm660-common/aospa_device_asus_X00TD" remote="github" revision="vendor" />
-        <project path="kernel/asus/sdm636" name="derp-sdm660-common/aospa_kernel" remote="github" revision="aosp" />
+        <project path="kernel/asus/sdm636" name="derp-sdm660-common/aospa_kernel" remote="github" revision="aosp1" />
 
         <!-- Hals stuff -->
-        <project path="hardware/qcom/media" name="derp-sdm660-common/android_hardware_qcom_media" remote="github" revision="ruby-660-4.19" />
-        <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="derp-sdm660-common/hardware_qcom_audio" remote="github" revision="ruby-660-4.19" />
-        <project path="hardware/qcom/display" name="derp-sdm660-common/android_hardware_qcom_display" remote="github" revision="ruby-660-4.19" />
+        <project path="hardware/qcom/media" name="AOSPA/android_hardware_qcom_media" remote="github" revision="ruby-660-4.19" />
+        <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="AOSPA/android_hardware_qcom_audio" remote="github" revision="ruby-660-4.19" />
+        <project path="hardware/qcom/display" name="AOSPA/android_hardware_qcom_display" remote="github" revision="ruby-660-4.19" />
         <project path="hardware/qcom/gps" name="AOSPA/android_hardware_qcom_gps" remote="github" revision="ruby-smxx50" />
   
 </manifest>
