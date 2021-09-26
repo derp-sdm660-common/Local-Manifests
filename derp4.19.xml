@@ -3,6 +3,9 @@
           
         <remote name="github"
                 fetch="https://github.com" />
+        
+        <remote name="gitlab"
+                fetch="https://gitlab.com" />
 
         <!-- Remove some projects -->
 	<remove-project name="device/common"/>
@@ -33,10 +36,11 @@
         <remove-project name="device/generic/opengl-transport" />
 
         <!-- Sync trees -->
-        <project path="device/asus/X00T" name="derp-sdm660-common/device_asus_x00t-4.19" remote="github" revision="test2" />
-        <project path="vendor/asus" name="derp-sdm660-common/proprietary_vendor_asus-4.19" remote="github" revision="arrow-11.0" />
-        <project path="kernel/asus/sdm660" name="derp-sdm660-common/android_kernel_asus_X00T" remote="github" revision="arrow-11.0" />
+        <project path="device/asus/X00T" name="derp-sdm660-common/device_asus_x00t-4.19" remote="github" revision="test3" />
+        <project path="vendor/asus" name="ArrowOS-Devices/android_vendor_asus_X00T" remote="github" revision="arrow-11.0" />
+        <project path="kernel/asus/sdm660" name="ArrowOS-Devices/android_kernel_asus_X00T" remote="github" revision="arrow-11.0" />
         <project path="vendor/qcom/opensource/power" name="derp-sdm660-common/android_vendor_qcom_opensource_power" remote="github" revision="lineage-18.1" />
+        <project path="prebuilts/clang/host/linux-x86/clang-r433403" name="crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-r433403" remote="gitlab" revision="11.0" clone-depth="1" />
 
         <!-- Hals stuff -->
         <remove-project name="android_hardware_qcom_audio" />
